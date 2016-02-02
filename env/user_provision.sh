@@ -5,4 +5,3 @@ then
 else
     echo "Git Prompt already installed!"
 fi
-
