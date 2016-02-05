@@ -35,7 +35,8 @@ theme = "hugo-creative-theme"
             about     = "About"
             services  = "Service"
             leadership = "Leadership"
-            portfolio = "Ministries"
+            ministries = "Ministries"
+            blog = "Blog"
             contact   = "Contact"
 
 	# Hero section
@@ -50,7 +51,7 @@ theme = "hugo-creative-theme"
 	[params.about]
 		headline    = "Situated in Victoria Village"
 		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Come worship with us!"
+		buttonText  = "Learn more about us!"
 
 
 	# Service section

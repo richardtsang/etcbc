@@ -1,14 +1,25 @@
-<article class="post">
-<header>
-<h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a> </h2>
-<div class="post-meta">{{ .Date.Format "Mon, Jan 2, 2006" }} - Read in {{ .ReadingTime }} Min </div>
-</header>
-<div class="summary">
-    {{ .Summary }}
-</div>
-anything worthwhile here?
-<footer>
-<a href='{{ .Permalink }}'><nobr>Read more →</nobr></a>
-</footer>
-</article>
-{{ partial "script.html" .}}
+    {{ partial "head.blog.html" . }}
+    <body>
+        {{ partial "nav.blog.html" . }}
+        {{ partial "sidebar.html" . }}
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                <section id="main">
+                    <div>
+                        {{ range first 10 .Data.Pages }}
+                            {{ if eq .Type  "blog" }}
+                                {{ .Render "summary"}}
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                    </br>
+                    <h4>
+                        <a href="{{ .Site.BaseURL }}/blog/">Archive</a>
+                    </h4>
+                </section>
+            </div>
+        </div>
+        {{ partial "footer.html" .}}
+        {{ partial "script.html" .}}
+    </body>
+</html>
