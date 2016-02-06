@@ -51,7 +51,7 @@ theme = "hugo-creative-theme"
 	[params.about]
 		headline    = "Situated in Victoria Village"
 		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Learn more about us!"
+		buttonText  = "What's our history?"
 
 
 	# Service section
@@ -77,6 +77,7 @@ theme = "hugo-creative-theme"
 	[params.portfolio.modal]
         client = "Contact"
         buttonText = "Close"
+        date = "Last Updated"
 
     # Aside section
 	[params.aside]
