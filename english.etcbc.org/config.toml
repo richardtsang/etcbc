@@ -43,14 +43,14 @@ theme = "hugo-creative-theme"
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "Is this a warehouse?"
-		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
-		buttonText = "Find out more"
+		subtitle   = "It may appear to be one right now... but over the past few years, we've fundraised and have begun major renovations!"
+		buttonText = "Find out more about our Nehemiah Project!"
 
 
 	# About section
 	[params.about]
 		headline    = "Situated in Victoria Village"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
+		description = "We are a [CBOQ](//baptist.ca) church situated in Toronto, Ontario.  With a healthy 300 person multi-congregational something, we focus on becoming an integrated part of our local community... to be ushers in bringing God's glory here on Earth"
 		buttonText  = "What's our history?"
 
 
@@ -59,19 +59,19 @@ theme = "hugo-creative-theme"
 		headline = "Our service times"
 
         [[params.services.list]]
-            icon = "fa-diamond"
+            icon = "fa-book"
             title = "English Service"
-            description = "Our English Service meet at 11:30am every Sunday in the main Sanctuary"
+            description = "We currently meet at 11:30am in the main Sanctuary every Sunday!"
 
         [[params.services.list]]
-            icon = "fa-paper-plane"
+            icon = "fa-home"
             title = "Cantonese Service"
-            description = "You can use this theme as is, or you can make changes!"
+            description = "We currently meet at 10am in the main Sanctuary every Sunday with the Mandarin congregation!"
 
 	[[params.services.list]]
             icon = "fa-heart"
             title = "Mandarin Service"
-            description = "We update dependencies to keep things fresh."
+            description = "We currently meet at 10am in the main Sanctuary every Sunday with the Cantonese congregation!"
 
     # Portfolio modals
 	[params.portfolio.modal]
