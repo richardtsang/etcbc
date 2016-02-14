@@ -30,7 +30,10 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">{{ with .Title }}{{ . }}{{ end }}</h2>
                 <hr class="{{ if eq (mod .Params.order 2) 0 }}dark{{else}}light{{end}}">
-                <p class="text-faded">{{ .Content }}</p>
+                <p class="text-faded">
+                <img class="img-responsive img-rounded" style="float: {{ if eq (mod .Params.order 2) 0 }}left{{else}}right{{end}};" src="../img/about/{{.Params.image}}" width=150px />
+                    {{ .Content }}
+                </p>
             </div>
         </div>
     </div>

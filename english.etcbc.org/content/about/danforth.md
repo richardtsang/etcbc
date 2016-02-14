@@ -2,7 +2,7 @@
 order = 1
 title = "Our first building"
 description = "do we need a description here?"
-image = "heade2r.jpg"
+image = "building1.jpg"
 date = "2016-02-01"
 draft = false
 hoju = "hello"
