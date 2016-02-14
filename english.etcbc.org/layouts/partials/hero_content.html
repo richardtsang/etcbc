@@ -1,0 +1,14 @@
+{{ "<!-- HEADER -->" | safeHTML }}
+<header {{ if .Params.image }}
+            style="background-image: url('../img/{{.Params.image}}')">
+        {{else}}
+        >
+        {{end}}
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>{{ .Title }}</h1>
+            <hr>
+            <p>{{ .Description }}</p>
+        </div>
+    </div>
+</header>

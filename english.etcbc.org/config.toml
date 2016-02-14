@@ -52,6 +52,8 @@ theme = "hugo-creative-theme"
 		headline    = "Situated in Victoria Village"
 		description = "We are a [CBOQ](//baptist.ca) church situated in Toronto, Ontario.  With a healthy 300 person multi-congregational something, we focus on becoming an integrated part of our local community... to be ushers in bringing God's glory here on Earth"
 		buttonText  = "What's our history?"
+                buttonLink  = "about/"
+                
 
 
 	# Service section
