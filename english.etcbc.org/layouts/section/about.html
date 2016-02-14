@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+        {{ partial "nav.html" . }}
+
+        <!-- This is just taken from the hero partial -->
+        <header style="background-image: url('../img/heade2r.jpg')">
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1>About ETCBC<h1>
+                    <hr>
+                    <p>Interested in knowing more?</p>
+                </div>
+            </div>
+        </header>
+
+        {{ range .Data.Pages }}
+            {{ if eq .Type "about"}}
+                {{ if not .Params.draft }}
+                    {{ if eq (mod .Params.order 2) 0 }}
+<section class="">
+                      {{else}}
+<section class="bg-primary">
+                      {{end}}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{ with .Title }}{{ . }}{{ end }}</h2>
+                <hr class="{{ if eq (mod .Params.order 2) 0 }}dark{{else}}light{{end}}">
+                <p class="text-faded">{{ .Content }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+        {{ partial "aside.html" . }}
+        {{ partial "contact.html" . }} 
+        {{ partial "js.html" . }}
+    </body>
+</html>
